@@ -15,11 +15,12 @@ Currently my first go at this, so the code might look exactly like her. I hope t
   
 ## Lessons
 
-**Current Progress:** `Completed Chapter 1`
+**Current Progress:** `Completed Part 3`
 
 ## Acknowledgements
 
 - [How to make a Landing Page](https://www.youtube.com/watch?v=aoQ6S1a32j8&t)
 - [Jessica Chan Twitter](https://twitter.com/thecodercoder)
 - [Jessica Chan Youtube](https://youtube.com/thecodercoder)
+- [Assets and Challenge Hub](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN)
 - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
