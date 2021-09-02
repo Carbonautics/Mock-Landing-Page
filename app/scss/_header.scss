@@ -1,6 +1,34 @@
 .header {
-  nav{
-    padding: 1.0625rem 1.5rem;
+  //Ham open styles
+  &.open {
+
+    .header__toggle {
+      > span:first-child{
+        transform: rotate(45deg);
+      }
+      > span:nth-child(2){
+        opacity: 0;
+      }
+      > span:last-child{
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .overlay {
+    opacity: 0;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-image: linear-gradient($darkBlue, transparent);
+  }
+  nav {
+    position: relative;
+    background-color: $white;
+    padding-top: 1.0625rem;
+    padding-bottom: 1.0625rem;
   }
 
   &__logo {
@@ -9,18 +37,38 @@
       height: 1.375rem;
     }
   }
-  &__menu { //Mobile Menu
+  &__toggle { //Mobile Menu toggle
     > span {
       display: block;
       width: 26px;
       height: 2px;
       background-color: $darkBlue;
-
+      transition: all 275ms ease-in-out;
+      transform-origin: 3px 1px;
       &:not(:last-child){
-        margin-bottom: 3px;
+        margin-bottom: 5px;
       }
     }
   }
+  &__menu {
+    padding: 1.625rem;
+    margin-top: 1.5rem;
+    background: $white;
+    border-radius: 5px;
+    position: absolute;
+    width: calc(100% - 3rem);
+    left: 50%;
+    transform: translateX(-50%);
+
+    a {
+      display: block;
+      padding: 0.625rem;
+      text-decoration: none;
+      color: $darkBlue;
+      text-align: center;
+    }
+  }
+
 
   &__links{
     a {

@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="/app/scss/style.css">
 
-  <title>Frontend Mentor | Easybank landing page</title>
+  <title>Easybank landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -20,12 +20,13 @@
 </head>
 <body>
   <header class="header">
-    <nav class="flex flex-jc-sb flex-ai-c">
+    <div class="overlay has-fade"></div>
+    <nav class="container flex flex-jc-sb flex-ai-c">
       <a href="/" class="header__logo">
         <img src="images/logo.svg" alt="EasyBank" />
       </a>
 
-      <a href="#" class="header__menu hide-for-desktop">
+      <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
         <span></span>
         <span></span>
         <span></span>
@@ -41,9 +42,15 @@
 
       <a href="#" class="button header__cta hide-for-mobile">Request Invite</a>
     </nav>
-    
+    <div class="header__menu has-fade">
+      <a href="">Home</a>
+      <a href="">About</a>
+      <a href="">Contact</a>
+      <a href="">Blog</a>
+      <a href="">Careers</a>
+    </div>
   </header>
-<!-- 
+<!--
   Home
   About
   Contact
@@ -51,7 +58,7 @@
   Careers
 
   Request Invite
-
+ 
 
 
   Next generation digital banking
